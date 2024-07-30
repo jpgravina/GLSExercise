@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OilPriceTrendTest
-build_property.ProjectDir = C:\Users\GiampieroGravina\OilPriceTrend\OilPriceTrend\OilPriceTrendTest\
+build_property.ProjectDir = C:\Users\GiampieroGravina\GLSExercise\OilPriceTrendTest\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
