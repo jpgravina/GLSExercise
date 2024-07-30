@@ -4,8 +4,8 @@ Questo progetto è un esercizio richiesto da GLS per il colloquio del 31/07/2024
 L'applicazione recupera dinamicamente i dati storici del prezzo del petrolio da un file JSON durante l'avvio.
 
 ## Requisiti
- .NET 6.0 o successivi
-  Docker (opzionale per la containerizzazione)
+- .NET 6 SDK
+- Docker (opzionale per la containerizzazione)
 
 ## Come eseguire il progetto
 1. Clonare il repository
@@ -20,7 +20,19 @@ L'applicazione recupera dinamicamente i dati storici del prezzo del petrolio da 
     dotnet run
     ```
 
-3. L'API sarà disponibile all'indirizzo `http://localhost:5050/api/OilPriceTrend`.
+3. L'API sarà disponibile all'indirizzo `http://localhost:5050/swagger/index.html'
+   Ecco un esempio di payload JSON per richiedere il trend dei prezzi del petrolio:
+   ```json
+   {
+		"id": 1,
+		"jsonrpc": "2.0",
+		"method": "GetOilPriceTrend",
+		"params": {
+			"startDate": "2020-01-01",
+			"endDate": "2020-01-05"
+		}
+	}
+	'''
 
 ## Esecuzione con Docker
 
