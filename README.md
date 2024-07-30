@@ -8,7 +8,8 @@ L'applicazione recupera dinamicamente i dati storici del prezzo del petrolio da 
 - Docker (opzionale per la containerizzazione)
 
 ## Come eseguire il progetto
-1. Clonare il repository
+
+1. Clona il repository:
  ```bash
     git clone https://github.com/jpgravina/GLSExercise.git
     cd OilPriceTrend
