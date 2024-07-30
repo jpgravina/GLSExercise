@@ -1,0 +1,41 @@
+﻿using Newtonsoft.Json.Linq;
+using OilPriceTrend.Models;
+using RestSharp;
+using System.Net.Http;
+
+namespace OilPriceTrend.Services
+{
+    public class OilPriceService : IOilPriceService
+    {
+        private const string Url = "https://glsitaly-download.s3.eu-central-1.amazonaws.com/MOBILE_APP/BrentDaily/brent-daily.json";
+        private readonly IHttpClient _httpClient;
+
+        public OilPriceService(IHttpClient httpClient)
+        {
+            _httpClient = httpClient;
+        }
+
+        public List<OilPrice> GetOilPrices(DateTime startDate, DateTime endDate)
+        {
+            var request = new RestRequest();
+            var response = _httpClient.Execute(request);
+
+            if (!response.IsSuccessful)
+            {
+                throw new Exception("Could not retrieve oil prices");
+            }
+
+            var data = JArray.Parse(response.Content);
+            var filteredData = data
+                .Where(d => DateTime.Parse(d["Date"].ToString()) >= startDate && DateTime.Parse(d["Date"].ToString()) <= endDate)
+                .Select(d => new OilPrice
+                {
+                    DateISO8601 = d["Date"].ToString(),
+                    Price = (decimal)d["Price"]
+                })
+                .ToList();
+
+            return filteredData;
+        }
+    }
+}

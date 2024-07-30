@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OilPriceTrend", "OilPriceTrend\OilPriceTrend.csproj", "{D903247C-A0E4-42BE-936E-81B0CD69E217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OilPriceTrendTest", "OilPriceTrendTest\OilPriceTrendTest.csproj", "{D69BC8F8-2219-42FC-A9B8-99BEB44D7FB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D903247C-A0E4-42BE-936E-81B0CD69E217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D903247C-A0E4-42BE-936E-81B0CD69E217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D903247C-A0E4-42BE-936E-81B0CD69E217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D903247C-A0E4-42BE-936E-81B0CD69E217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69BC8F8-2219-42FC-A9B8-99BEB44D7FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69BC8F8-2219-42FC-A9B8-99BEB44D7FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69BC8F8-2219-42FC-A9B8-99BEB44D7FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69BC8F8-2219-42FC-A9B8-99BEB44D7FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1F182ED-A4BA-41F2-9B92-CCE6523B138F}
+	EndGlobalSection
+EndGlobal
