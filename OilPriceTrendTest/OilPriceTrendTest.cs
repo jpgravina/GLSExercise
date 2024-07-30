@@ -42,15 +42,15 @@ namespace OilPriceTrendTest
 
             _mockService.Setup(s => s.GetOilPrices(startDate, endDate)).Returns(prices);
 
-            var request = new JObject
+            var request = new JsonRpcRequest
             {
-                ["id"] = 1,
-                ["jsonrpc"] = "2.0",
-                ["method"] = "GetOilPriceTrend",
-                ["params"] = new JObject
+                Id = 1,
+                Jsonrpc = "2.0",
+                Method = "GetOilPriceTrend",
+                Params = new Params
                 {
-                    ["startDateISO8601"] = "2020-01-01",
-                    ["endDateISO8601"] = "2020-01-05"
+                    StartDateISO8601 = "2020-01-01",
+                    EndDateISO8601 = "2020-01-05"
                 }
             };
 

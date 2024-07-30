@@ -18,12 +18,12 @@ namespace OilPriceTrend.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> GetOilPriceTrend([FromBody] JObject jsonRpcRequest)
+        public async Task<IActionResult> GetOilPriceTrend([FromBody] JsonRpcRequest jsonRpcRequest)
         {
-            var id = jsonRpcRequest["id"];
-            var method = jsonRpcRequest["method"].ToString();
-            var startDate = DateTime.Parse(jsonRpcRequest["params"]["startDateISO8601"].ToString(), null, DateTimeStyles.RoundtripKind);
-            var endDate = DateTime.Parse(jsonRpcRequest["params"]["endDateISO8601"].ToString(), null, DateTimeStyles.RoundtripKind);
+            var id = jsonRpcRequest.Id;
+            var method = jsonRpcRequest.Method;
+            var startDate = DateTime.Parse(jsonRpcRequest.Params.StartDateISO8601, null, DateTimeStyles.RoundtripKind);
+            var endDate = DateTime.Parse(jsonRpcRequest.Params.EndDateISO8601, null, DateTimeStyles.RoundtripKind);
 
             if (method != "GetOilPriceTrend")
             {

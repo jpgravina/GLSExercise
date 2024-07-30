@@ -20,7 +20,7 @@ L'applicazione recupera dinamicamente i dati storici del prezzo del petrolio da 
     dotnet run
     ```
 
-3. L'API sarà disponibile all'indirizzo `https://localhost:5001/api/OilPriceTrend`.
+3. L'API sarà disponibile all'indirizzo `http://localhost:5050/api/OilPriceTrend`.
 
 ## Esecuzione con Docker
 
@@ -31,10 +31,8 @@ L'applicazione recupera dinamicamente i dati storici del prezzo del petrolio da 
 
 2. Esegui il container:
     ```bash
-    docker run -d -p 8080:80 oilpricetrend
-    ```
+    docker run -d -p 8080:80 oilpricetrend   ```
 
-3. L'API sarà disponibile all'indirizzo `http://localhost:8080/api/OilPriceTrend`.
 
 ## Esecuzione dei test
 

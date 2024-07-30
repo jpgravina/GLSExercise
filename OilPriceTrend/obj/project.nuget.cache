@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wsuOafpG+7SigHfdUsV9xaeG7C+WwL6lf7yOquPBq6Sxzjzf14lnhff2MXzzhCFZg0tmypDp4rdc/PN7Jp1xNA==",
+  "dgSpecHash": "ZKagP8rXg8GJ+5x+Sf65sUSuMs9UwQ6tMObikqN3ckDDxroLGB1Dgc00H+Tx/FRzgFwY8zeNoUXAIuLEqYt/0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend.csproj",
+  "projectFilePath": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrend\\OilPriceTrend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GiampieroGravina\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\GiampieroGravina\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\8.0.7\\microsoft.aspnetcore.mvc.testing.8.0.7.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OilPriceTrendTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1c7b0dc1c86463cab88808c5d4b573faac88f50")]
 [assembly: System.Reflection.AssemblyProductAttribute("OilPriceTrendTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OilPriceTrendTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

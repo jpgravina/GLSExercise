@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mcBMAIuPlh+CfGVC/PmWmFy6PSBUbl9XkzlKHnCVOiB/uUtOlpviCwB1OI1bfc6ovvc7pD7bdfQHBi5QCN0gFA==",
+  "dgSpecHash": "+nbXZD7klcPVH3t7OjEkggO35qSeMPfa6QV21GNm+GupgdWPG2WrDipXlKDg+HREJI9NOY2/O6Jata5LK8zxkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrendTest\\OilPriceTrendTest.csproj",
+  "projectFilePath": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrendTest\\OilPriceTrendTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GiampieroGravina\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\GiampieroGravina\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

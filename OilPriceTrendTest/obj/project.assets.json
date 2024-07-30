@@ -3519,11 +3519,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrendTest\\OilPriceTrendTest.csproj",
+      "projectUniqueName": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrendTest\\OilPriceTrendTest.csproj",
       "projectName": "OilPriceTrendTest",
-      "projectPath": "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrendTest\\OilPriceTrendTest.csproj",
+      "projectPath": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrendTest\\OilPriceTrendTest.csproj",
       "packagesPath": "C:\\Users\\GiampieroGravina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrendTest\\obj\\",
+      "outputPath": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrendTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\GiampieroGravina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3540,8 +3540,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend.csproj": {
-              "projectPath": "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend.csproj"
+            "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrend\\OilPriceTrend.csproj": {
+              "projectPath": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrend\\OilPriceTrend.csproj"
             }
           }
         }

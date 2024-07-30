@@ -2788,11 +2788,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend.csproj",
+      "projectUniqueName": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrend\\OilPriceTrend.csproj",
       "projectName": "OilPriceTrend",
-      "projectPath": "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend.csproj",
+      "projectPath": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrend\\OilPriceTrend.csproj",
       "packagesPath": "C:\\Users\\GiampieroGravina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GiampieroGravina\\OilPriceTrend\\OilPriceTrend\\OilPriceTrend\\obj\\",
+      "outputPath": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\GiampieroGravina\\AppData\\Roaming\\NuGet\\NuGet.Config",
