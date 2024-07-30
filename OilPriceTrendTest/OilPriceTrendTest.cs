@@ -33,11 +33,11 @@ namespace OilPriceTrendTest
             var endDate = new DateTime(2020, 01, 05);
             var prices = new List<OilPrice>
         {
-            new OilPrice { DateISO8601 = "2020-01-01", Price = 12.3M },
-            new OilPrice { DateISO8601 = "2020-01-02", Price = 13.4M },
-            new OilPrice { DateISO8601 = "2020-01-03", Price = 14.5M },
-            new OilPrice { DateISO8601 = "2020-01-04", Price = 16.7M },
-            new OilPrice { DateISO8601 = "2020-01-05", Price = 18.9M }
+            new OilPrice { Date = "2020-01-01", Price = 12.3M },
+            new OilPrice { Date = "2020-01-02", Price = 13.4M },
+            new OilPrice { Date = "2020-01-03", Price = 14.5M },
+            new OilPrice { Date = "2020-01-04", Price = 16.7M },
+            new OilPrice { Date = "2020-01-05", Price = 18.9M }
         };
 
             _mockService.Setup(s => s.GetOilPrices(startDate, endDate)).Returns(prices);
@@ -49,8 +49,8 @@ namespace OilPriceTrendTest
                 Method = "GetOilPriceTrend",
                 Params = new Params
                 {
-                    StartDateISO8601 = "2020-01-01",
-                    EndDateISO8601 = "2020-01-05"
+                    StartDate = "2020-01-01",
+                    EndDate = "2020-01-05"
                 }
             };
 
@@ -66,7 +66,7 @@ namespace OilPriceTrendTest
             var resultPrices = response.Result.Prices;
             Assert.NotNull(resultPrices);
             Assert.Equal(5, resultPrices.Count);
-            Assert.Equal("2020-01-01", resultPrices[0].DateISO8601);
+            Assert.Equal("2020-01-01", resultPrices[0].Date);
             Assert.Equal(12.3M, resultPrices[0].Price);
         }
 
@@ -86,11 +86,11 @@ namespace OilPriceTrendTest
             // Assert
             Assert.NotNull(result);            
             Assert.Equal(5, result.Count);
-            Assert.Contains(result, price => price.DateISO8601 == "2020-08-24" && price.Price == 44.43m);
-            Assert.Contains(result, price => price.DateISO8601 == "2020-08-25" && price.Price == 46.01m);
-            Assert.Contains(result, price => price.DateISO8601 == "2020-08-26" && price.Price == 45.79m);
-            Assert.Contains(result, price => price.DateISO8601 == "2020-08-27" && price.Price == 44.84m);
-            Assert.Contains(result, price => price.DateISO8601 == "2020-08-28" && price.Price == 45.22m);
+            Assert.Contains(result, price => price.Date == "2020-08-24" && price.Price == 44.43m);
+            Assert.Contains(result, price => price.Date == "2020-08-25" && price.Price == 46.01m);
+            Assert.Contains(result, price => price.Date == "2020-08-26" && price.Price == 45.79m);
+            Assert.Contains(result, price => price.Date == "2020-08-27" && price.Price == 44.84m);
+            Assert.Contains(result, price => price.Date == "2020-08-28" && price.Price == 45.22m);
         }
     }
 }

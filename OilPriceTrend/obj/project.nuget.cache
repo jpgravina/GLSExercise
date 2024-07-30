@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZKagP8rXg8GJ+5x+Sf65sUSuMs9UwQ6tMObikqN3ckDDxroLGB1Dgc00H+Tx/FRzgFwY8zeNoUXAIuLEqYt/0A==",
+  "dgSpecHash": "OqLiqVmBYMk+wUvrJanGj5Rn2UJA+OP8GiekzXRmGyMIDWYR6LuPp1UzDCm/6XPrw6gBDLXECdhRRqqS/4COIg==",
   "success": true,
   "projectFilePath": "C:\\Users\\GiampieroGravina\\GLSExercise\\OilPriceTrend\\OilPriceTrend.csproj",
   "expectedPackageFiles": [
@@ -56,7 +56,8 @@
     "C:\\Users\\GiampieroGravina\\.nuget\\packages\\xunit.assert\\2.9.0\\xunit.assert.2.9.0.nupkg.sha512",
     "C:\\Users\\GiampieroGravina\\.nuget\\packages\\xunit.core\\2.9.0\\xunit.core.2.9.0.nupkg.sha512",
     "C:\\Users\\GiampieroGravina\\.nuget\\packages\\xunit.extensibility.core\\2.9.0\\xunit.extensibility.core.2.9.0.nupkg.sha512",
-    "C:\\Users\\GiampieroGravina\\.nuget\\packages\\xunit.extensibility.execution\\2.9.0\\xunit.extensibility.execution.2.9.0.nupkg.sha512"
+    "C:\\Users\\GiampieroGravina\\.nuget\\packages\\xunit.extensibility.execution\\2.9.0\\xunit.extensibility.execution.2.9.0.nupkg.sha512",
+    "C:\\Users\\GiampieroGravina\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
   ],
   "logs": []
 }

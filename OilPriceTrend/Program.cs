@@ -9,6 +9,7 @@ builder.Services.AddScoped<IOilPriceService, OilPriceService>();
 builder.Services.AddSingleton<IHttpClient>(new OilPriceTrend.Services.HttpClient("https://glsitaly-download.s3.eu-central-1.amazonaws.com/MOBILE_APP/BrentDaily/brent-daily.json"));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.WebHost.UseUrls("http://localhost:5050");
 
 var app = builder.Build();
 
@@ -20,7 +21,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

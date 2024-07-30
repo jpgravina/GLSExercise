@@ -348,6 +348,9 @@ C:\Users\GiampieroGravina\OilPriceTrend\OilPriceTrend\OilPriceTrend\obj\Debug\ne
 C:\Users\GiampieroGravina\GLSExercise\OilPriceTrend\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\GiampieroGravina\GLSExercise\OilPriceTrend\bin\Debug\net8.0\appsettings.json
 C:\Users\GiampieroGravina\GLSExercise\OilPriceTrend\bin\Debug\net8.0\MvcTestingAppManifest.json
+C:\Users\GiampieroGravina\GLSExercise\OilPriceTrend\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\GiampieroGravina\GLSExercise\OilPriceTrend\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\GiampieroGravina\GLSExercise\OilPriceTrend\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\GiampieroGravina\GLSExercise\OilPriceTrend\bin\Debug\net8.0\OilPriceTrend.exe
 C:\Users\GiampieroGravina\GLSExercise\OilPriceTrend\bin\Debug\net8.0\OilPriceTrend.deps.json
 C:\Users\GiampieroGravina\GLSExercise\OilPriceTrend\bin\Debug\net8.0\OilPriceTrend.runtimeconfig.json

@@ -22,8 +22,8 @@ namespace OilPriceTrend.Controllers
         {
             var id = jsonRpcRequest.Id;
             var method = jsonRpcRequest.Method;
-            var startDate = DateTime.Parse(jsonRpcRequest.Params.StartDateISO8601, null, DateTimeStyles.RoundtripKind);
-            var endDate = DateTime.Parse(jsonRpcRequest.Params.EndDateISO8601, null, DateTimeStyles.RoundtripKind);
+            var startDate = DateTime.Parse(jsonRpcRequest.Params.StartDate, null, DateTimeStyles.RoundtripKind);
+            var endDate = DateTime.Parse(jsonRpcRequest.Params.EndDate, null, DateTimeStyles.RoundtripKind);
 
             if (method != "GetOilPriceTrend")
             {

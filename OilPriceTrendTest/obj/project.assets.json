@@ -1312,7 +1312,8 @@
           "Newtonsoft.Json": "13.0.3",
           "RestSharp": "111.4.0",
           "Swashbuckle.AspNetCore": "6.4.0",
-          "xunit": "2.9.0"
+          "xunit": "2.9.0",
+          "xunit.runner.visualstudio": "2.4.3"
         },
         "compile": {
           "bin/placeholder/OilPriceTrend.dll": {}

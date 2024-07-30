@@ -10,7 +10,7 @@
 
     public class Params
     {
-        public string StartDateISO8601 { get; set; }
-        public string EndDateISO8601 { get; set; }
+        public string StartDate { get; set; }
+        public string EndDate { get; set; }
     }
 }

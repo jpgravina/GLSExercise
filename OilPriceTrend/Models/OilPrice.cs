@@ -14,7 +14,7 @@
 
     public class OilPrice
     {
-        public string DateISO8601 { get; set; }
+        public string Date { get; set; }
         public decimal Price { get; set; }
     }
 
