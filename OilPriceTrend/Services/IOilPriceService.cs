@@ -4,6 +4,6 @@ namespace OilPriceTrend.Services
 {
     public interface IOilPriceService
     {
-        List<OilPrice> GetOilPrices(DateTime startDate, DateTime endDate);
+        Task<List<OilPrice>> GetOilPricesAsync(DateTime startDate, DateTime endDate);
     }
 }

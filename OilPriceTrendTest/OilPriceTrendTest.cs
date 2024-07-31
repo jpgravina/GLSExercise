@@ -28,7 +28,7 @@ namespace OilPriceTrendTest
         [Fact]
         public async Task GetOilPriceTrend_ReturnsCorrectPrices()
         {
-            // Arrange
+            //    // Arrange
             var startDate = new DateTime(2020, 01, 01);
             var endDate = new DateTime(2020, 01, 05);
             var prices = new List<OilPrice>
@@ -40,21 +40,11 @@ namespace OilPriceTrendTest
             new OilPrice { Date = "2020-01-05", Price = 18.9M }
         };
 
-            _mockService.Setup(s => s.GetOilPrices(startDate, endDate)).Returns(prices);
+            _mockService.Setup(s => s.GetOilPricesAsync(startDate, endDate)).ReturnsAsync(prices);
 
-            var request = new JsonRpcRequest
-            {
-                Id = 1,
-                Jsonrpc = "2.0",
-                Method = "GetOilPriceTrend",
-                Params = new Params
-                {
-                    StartDate = "2020-01-01",
-                    EndDate = "2020-01-05"
-                }
-            };
-
-            var result = await _controller.GetOilPriceTrend(request);
+            string fromDate = "2020-01-01";
+            string toDate = "2020-01-05";
+            var result = await _controller.GetOilPriceTrend(fromDate, toDate);
 
             // Assert
             var okResult = result as OkObjectResult;
@@ -71,17 +61,17 @@ namespace OilPriceTrendTest
         }
 
         [Fact]
-        public void GetOilPrices_ShouldReturnFilteredPrices()
+        public async Task GetOilPrices_ShouldReturnFilteredPrices()
         {
             // Arrange
-            var httpClient = "https://glsitaly-download.s3.eu-central-1.amazonaws.com/MOBILE_APP/BrentDaily/brent-daily.json";
-            var service = new OilPriceService(new OilPriceTrend.Services.HttpClient(httpClient)); // Usa l'adapter per RestClient
+            var httpClient = new OilPriceTrend.Services.HttpClientWrapper("https://glsitaly-download.s3.eu-central-1.amazonaws.com/MOBILE_APP/BrentDaily/brent-daily.json");
+            var service = new OilPriceService(httpClient);
 
             var startDate = new DateTime(2020, 8, 24);
             var endDate = new DateTime(2020, 8, 28);
 
             // Act
-            var result = service.GetOilPrices(startDate, endDate);
+            var result = await service.GetOilPricesAsync(startDate, endDate);
 
             // Assert
             Assert.NotNull(result);            

@@ -13,11 +13,10 @@ namespace OilPriceTrend.Services
         {
             _httpClient = httpClient;
         }
-
-        public List<OilPrice> GetOilPrices(DateTime startDate, DateTime endDate)
+        public async Task<List<OilPrice>> GetOilPricesAsync(DateTime startDate, DateTime endDate)
         {
             var request = new RestRequest();
-            var response = _httpClient.Execute(request);
+            var response = await _httpClient.ExecuteAsync(request);
 
             if (!response.IsSuccessful)
             {

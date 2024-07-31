@@ -17,25 +17,30 @@ namespace OilPriceTrend.Controllers
             _oilPriceService = oilPriceService;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> GetOilPriceTrend([FromBody] JsonRpcRequest jsonRpcRequest)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fromDate"></param>
+        /// <param name="toDate"></param>
+        /// <returns></returns>
+        [HttpGet("GetOilPriceTrend")]
+        public async Task<IActionResult> GetOilPriceTrend(string fromDate, string toDate)
         {
-            var id = jsonRpcRequest.Id;
-            var method = jsonRpcRequest.Method;
-            var startDate = DateTime.Parse(jsonRpcRequest.Params.StartDate, null, DateTimeStyles.RoundtripKind);
-            var endDate = DateTime.Parse(jsonRpcRequest.Params.EndDate, null, DateTimeStyles.RoundtripKind);
+            DateTime startDate, endDate;
+            string dateFormat = "yyyy-MM-dd";
 
-            if (method != "GetOilPriceTrend")
+            if (!DateTime.TryParseExact(fromDate, dateFormat, CultureInfo.InvariantCulture, DateTimeStyles.None, out startDate) ||
+                !DateTime.TryParseExact(toDate, dateFormat, CultureInfo.InvariantCulture, DateTimeStyles.None, out endDate))
             {
-                return BadRequest(new { jsonrpc = "2.0", id, error = new { code = -32601, message = "Method not found" } });
+                return BadRequest(new { error = "Dates must be in the format "+dateFormat });
             }
 
-            var prices = _oilPriceService.GetOilPrices(startDate, endDate);
+            var prices = await _oilPriceService.GetOilPricesAsync(startDate, endDate);
 
             var response = new OilPriceResponse
             {
                 JsonRpc = "2.0",
-                Id = Convert.ToInt32(id),
+                Id = 1,
                 Result = new OilPriceResult { Prices = prices }
             };
 

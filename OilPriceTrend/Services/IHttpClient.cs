@@ -6,7 +6,7 @@ namespace OilPriceTrend.Services
 
     public interface IHttpClient
     {
-        RestResponse Execute(RestRequest request);
+        Task<RestResponse> ExecuteAsync(RestRequest request);
     }
 
 }
