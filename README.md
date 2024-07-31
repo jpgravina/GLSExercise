@@ -22,7 +22,8 @@ L'applicazione recupera dinamicamente i dati storici del prezzo del petrolio da 
     ```
 
 3. L'API sarà disponibile all'indirizzo `http://localhost:5050/api/OilPriceTrend/GetOilPriceTrend?fromDate=startDate&toDate=endDate'
-	le date di inizio e fine devono essere di questo formato yyyy-MM-dd
+	le date di inizio e fine ricerca devono essere di questo formato yyyy-MM-dd 
+	esempio: http://localhost:5050/api/OilPriceTrend/GetOilPriceTrend?fromDate=2020-01-01&toDate=2020-01-31
    
 
 ## Esecuzione con Docker
